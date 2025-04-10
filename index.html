@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARi's Portfolio</title>
+  <!-- External Libraries for animations and fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-p8DQHv8b2fK4KqGbN3EBTQ7U7e6Q/8s2D+Tt6mWZ/9u7J0smF9lkDqx8Bkf7nJaf8zR7gS6ZtpQPxj4VpT3CFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Particles.js Background Container -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ARi</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <div class="hero-text">
+        <h1>
+          <span class="gradient-text">Welcome to</span>
+          <span class="dynamic-text" id="dynamic-title">ARi's Universe</span>
+        </h1>
+        <div class="hero-subtitle">
+          <h2 id="typed"></h2>
+          <div class="pulse-dot"></div>
+        </div>
+      </div>
+      
+      <!-- Floating Tech Icons Background -->
+      <div class="floating-tech">
+        <img src="icons/html.png" alt="HTML" class="tech-icon" style="--delay: 0s">
+        <img src="icons/js.png" alt="JavaScript" class="tech-icon" style="--delay: 2s">
+        <img src="icons/react.png" alt="React" class="tech-icon" style="--delay: 4s">
+        <img src="icons/python.png" alt="Python" class="tech-icon" style="--delay: 6s">
+        <img src="icons/text.png" alt="Css" class="tech-icon" style="--delay: 8s">
+        <img src="icons/bootstrap.png" alt="BootStrap" class="tech-icon" style="--delay: 10s">
+      </div>
+      
+      <!-- Interactive Terminal -->
+      <div class="terminal-container">
+        <div class="terminal" id="terminal">
+          <div class="terminal-header">
+            <span class="prompt">visitor@portfolio:~$ </span>
+            <input type="text" id="terminal-input" placeholder="type 'help'" autocomplete="off"/>
+          </div>
+          <div class="terminal-output" id="terminal-output"></div>
+        </div>
+      </div>
+      
+      <!-- Social Cards -->
+      <div class="social-cards">
+        <div class="card" data-tooltip="LinkedIn">
+          <a href="https://www.linkedin.com/in/aritra-jana-5597a9277/" target="_blank">
+            <img src="LinkdIn.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div class="card" data-tooltip="GitHub">
+          <a href="https://github.com/aritraghub2005" target="_blank">
+            <img src="GitHub.png" alt="GitHub" />
+          </a>
+        </div>
+        <div class="card" data-tooltip="Instagram">
+          <a href="https://www.instagram.com/aritra_ari_697/" target="_blank">
+            <img src="Instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+      
+      <a href="#projects" class="btn btn-glow">
+        <span>View My Work</span>
+        <div class="hover-effect"></div>
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>Hello! I'm Aritra Jana, a 2nd-year Computer Science student driven by an unyielding passion for software
+        development and an insatiable curiosity for artificial intelligence and machine learning.</p>
+      
+      <section id="skills">
+        <h2>My Skills</h2>
+    
+        <!-- New Timeline Skills Display -->
+        <div class="skills-timeline">
+            <div class="timeline-circle"></div>
+    
+            <div class="timeline-item">
+                <div class="skill-card" data-year="2018">
+                    <div class="skill-icon">
+                        <img src="icons/html.png" alt="HTML5">
+                    </div>
+                    <div class="skill-details">
+                        <h4>HTML5</h4>
+                        <p>My first step into web development</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="skill-card" data-year="2019">
+                    <div class="skill-icon">
+                        <img src="icons/css.png" alt="CSS3">
+                    </div>
+                    <div class="skill-details">
+                        <h4>CSS3</h4>
+                        <p>Learned to style beautiful websites</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="skill-card" data-year="2020">
+                    <div class="skill-icon">
+                        <img src="icons/js.png" alt="JavaScript">
+                    </div>
+                    <div class="skill-details">
+                        <h4>JavaScript</h4>
+                        <p>Added interactivity to my projects</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="skill-card" data-year="2021">
+                    <div class="skill-icon">
+                        <img src="icons/python.png" alt="Python">
+                    </div>
+                    <div class="skill-details">
+                        <h4>Python</h4>
+                        <p>Dived into data science and automation</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="skill-card" data-year="2022">
+                    <div class="skill-icon">
+                        <img src="icons/java.png" alt="Java">
+                    </div>
+                    <div class="skill-details">
+                        <h4>Java</h4>
+                        <p>Built robust backend systems</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="skill-card" data-year="2023">
+                    <div class="skill-icon">
+                        <img src="icons/react.png" alt="React">
+                    </div>
+                    <div class="skill-details">
+                        <h4>React</h4>
+                        <p>Created modern web applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <p>This journey continues as I explore new technologies and frameworks to enhance my development skills.</p>
+        
+        <div id="description"></div>
+    </section>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container" data-aos="fade-left">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <div class="card-front">
+            <h3>AI Image Generator</h3>
+          </div>
+          <div class="card-back">
+            <p>A web app that generates images using Stable Diffusion API with custom prompts.</p>
+            <a href="https://example.com/ai-demo" class="btn-small">Demo</a>
+            <a href="https://github.com/aritraghub2005/ai-image-generator" class="btn-small">Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card-front">
+            <h3>Portfolio Website</h3>
+          </div>
+          <div class="card-back">
+            <p>This interactive portfolio built with Three.js, GSAP, and Particles.js.</p>
+            <a href="#" class="btn-small">Live</a>
+            <a href="https://github.com/aritraghub2005/portfolio" class="btn-small">Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-front">
+            <h3>Task Management App</h3>
+          </div>
+          <div class="card-back">
+            <p>A full-stack task manager with React frontend and Node.js backend.</p>
+            <a href="https://example.com/task-app" class="btn-small">Demo</a>
+            <a href="https://github.com/aritraghub2005/task-manager" class="btn-small">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ARi. All rights reserved.</p>
+  </footer>
+
+  <!-- External JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <!-- Particles.js Configuration -->
+  <script src="particles-config.js"></script>
+
+  <!-- Your Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
